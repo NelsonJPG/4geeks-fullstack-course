@@ -1,0 +1,11 @@
+/*
+METODO 4 => IMPORTACIONES 
+ESTE METODO NO ES UTILIZADO POR MOTIVOS DE RENDIMIENTO CSS Y COMPATIBILIDAD (SE DEBEN USAR HERRAMIENTAS JS QUE PERMITAN TRADUCIR ESTOS)
+
+@import url('https://4geeksacademy.com/es/inicio/miarchivo.css'); // EJEMPLO DE URL EXTERNA
+@import url('./miarchivo.css'); // EJEMPLO DE URL INTERNA
+*/
+
+h4 {
+    background-color: pink;
+}

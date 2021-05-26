@@ -108,6 +108,6 @@ La ruta de aprendizaje HTML que invito a realizar es:
 2. Etiquetas de Formato de Textos (b, i , mark, strong, u, etc...)
 3. Imagenes y Multimedia (a, img, video, picture, etc..)
 4. Tablas y Formularios (table, td, tr, input, select, etc...)
-5. Contenido Embebido (iframe, object, etc)
+5. Contenido Embebido (iframe, object, embed, etc)
 
-## LUEGO DE ESTO CONTINUA TU TRAVESÍA POR CSS (DALE COLOR A TU DOCUMENTO DE BLANCO Y NEGRO A COLOR).
+## LUEGO DE ESTO CONTINUA TU TRAVESÍA POR CSS (DALE COLOR A TU DOCUMENTO DE BLANCO Y NEGRO A COLOR) [Click Aqui](clase-2.md).

@@ -1,0 +1,13 @@
+
+
+h2 {
+    /*
+    IMPORTANTE: NO SE DEBEN COLOCAR 2 PROPIEDADES IGUALES EN UNA REGLA
+    */
+    color: red; 
+    color: blue; /* ultimo valor asignado */
+}
+
+h2:nth-of-type(2) {
+    color: green; /* SE ASIGNA EL COLOR VERDE AL SEGUNDO H2 */
+}
