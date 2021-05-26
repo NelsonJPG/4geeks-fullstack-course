@@ -1,0 +1,95 @@
+
+
+/*
+- TIPOS DE SELECTORES
+
+-1 SELECTORES SIMPLES 
+- selectores de TAG => relacionados a la etiqueta html 
+- selectores de atributos => son los que pueden ser filtrados por su atributo o valor
+- selectores de Clase (class)
+- selectores de Id
+- selectores de pseudoclases
+
+2-. SELECTORES COMPUESTOS
+- Selectores Descendientes
+- Selectores adyacentes
+- selector directo
+- multiples
+*/
+
+
+
+/* SELECTOR DE TAG HTML */
+body {
+    background-color: #f4f4f4;
+} 
+
+header {
+    background-color: lightgoldenrodyellow;
+}
+
+/* SELECTOR DE ATRIBUTO */
+
+a[target='_blank']{
+    color: red;
+}
+
+
+/*
+    CASO INICIO: buscar al inicio de la palabra a[class^='perro']
+    CASO FINAL: buscar al final de la palabra a[class$='perro']
+    CASO INTERMEDIO: buscar al que tenga la palabra a[class*='perro']
+    EXACTAMENTE: a[class='perro']
+*/
+a[class^='perro']{
+    color: greenyellow;
+}
+
+/* estos selectores pueden usarse en muchas etiquetas */
+.reutilizable {
+    color: orange;
+}
+
+.letra-pequena {
+    font-size: 11px;
+}
+
+.letra-grande {
+    font-size: 50px;
+}
+
+/* no pueden ser reutilizado - son elementos unicos*/
+#mi-cabecera {
+    border: 3px dotted red; 
+}
+
+li:nth-of-type(2){
+    background-color: black;
+}
+
+
+/* selectores son aquellos que tienen mas de una regla seguida de un evento */ 
+
+article .reutilizable {
+    color: teal;
+}
+
+/* ADYACENTE (USA UN SIMBOLO + )  solo aplica estilos al elemento siguiente si existe */
+article:nth-of-type(2) + article {
+    background-color: pink;
+}
+
+
+/*HERMANOS (USA VIRGULILLA ~) solo aplica estilos a elementos hermanos */
+p ~ p {
+    background-color: pink;
+}
+
+/* selector directo SE USA el simbolo de mayor que > */
+body > hr {
+    border: 2px solid #c829e7;
+}
+
+nav, footer {
+    background-color: steelblue;
+}
