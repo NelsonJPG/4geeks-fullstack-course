@@ -1,25 +1,27 @@
 
 
 /*
+
+SELECTORES IMPORTANCIA ES UTILIZAR LA MENOR CANTIDAD DE SELECTORES.  
+
 - TIPOS DE SELECTORES
 
--1 SELECTORES SIMPLES 
+1. SELECTORES SIMPLES => Son aquellos que solo tienen una definicion por ejemplo: .miClase { .....mideclaracion }
+
 - selectores de TAG => relacionados a la etiqueta html 
 - selectores de atributos => son los que pueden ser filtrados por su atributo o valor
 - selectores de Clase (class)
 - selectores de Id
 - selectores de pseudoclases
 
-2-. SELECTORES COMPUESTOS
+2. SELECTORES COMPUESTOS => Son aquellos que se componen por dos o mas selectores simples por ejemplo: (.miclasePadre > h2) TENEMOS UN SELECTOR DE CLASE Y UN SELECTOR DE TAG
 - Selectores Descendientes
 - Selectores adyacentes
 - selector directo
 - multiples
 */
 
-
-
-/* SELECTOR DE TAG HTML */
+/* SELECTOR DE TAG HTMl => FUNCIONA PARA TODAS LAS ETIQUETAS HTML DENTRO DE BODY */
 body {
     background-color: #f4f4f4;
 } 
@@ -28,12 +30,11 @@ header {
     background-color: lightgoldenrodyellow;
 }
 
-/* SELECTOR DE ATRIBUTO */
+/* SELECTOR DE ATRIBUTOS => SE DEFINEN ENTRE CORCHETES [atributo='valor'] */
 
 a[target='_blank']{
     color: red;
 }
-
 
 /*
     CASO INICIO: buscar al inicio de la palabra a[class^='perro']
@@ -45,7 +46,7 @@ a[class^='perro']{
     color: greenyellow;
 }
 
-/* estos selectores pueden usarse en muchas etiquetas */
+/* SELECTOR DE CLASE: estos selectores pueden usarse en muchas etiquetas SON REUTILIZABLES */
 .reutilizable {
     color: orange;
 }
@@ -58,38 +59,39 @@ a[class^='perro']{
     font-size: 50px;
 }
 
-/* no pueden ser reutilizado - son elementos unicos*/
+/* SELECTOR DE ID => no pueden ser reutilizado - son elementos unicos*/
 #mi-cabecera {
     border: 3px dotted red; 
 }
 
+/* SELECTOR DE PSEUDOCLASE => LA PSEUDO CLASE ES SIMPLEMENTE UNA MANERA DE DECIR QUE ELEMENTO ES SELECIONADO ESPECIFICAMENTE */
 li:nth-of-type(2){
     background-color: black;
 }
 
+/* SELECTORES COMPUESTO */
 
-/* selectores son aquellos que tienen mas de una regla seguida de un evento */ 
-
+/* SELECTOR DESCENDIENTE => ES UN SELECTOR QUE SE COMPORTA DE UN ELEMENTO PADRE HACIA SUS HIJOS O NIETOS EN CUALQUIER NIVEL */ 
 article .reutilizable {
     color: teal;
 }
 
-/* ADYACENTE (USA UN SIMBOLO + )  solo aplica estilos al elemento siguiente si existe */
+/* SELECTOR ADYACENTE (USA UN SIMBOLO + )  solo aplica estilos al elemento siguiente (SOLO AL SIGUIENTE) si existe */
 article:nth-of-type(2) + article {
     background-color: pink;
 }
 
-
-/*HERMANOS (USA VIRGULILLA ~) solo aplica estilos a elementos hermanos */
+/* SELECTOR DE HERMANO HERMANOS (USA VIRGULILLA ~) solo aplica a todos los elementos del mismo nivel (hermanos) */
 p ~ p {
     background-color: pink;
 }
 
-/* selector directo SE USA el simbolo de mayor que > */
+/* SELECTOR DIRECTO (USA EL SIMBOLO > ) SOLO SE APLICA A LOS HIJOS DIRECTOS (NO NIETOS) */
 body > hr {
     border: 2px solid #c829e7;
 }
 
+/* SELECTOR MULTIPLE (SON SEPARADOS POR COMAS) INDICAN QUE SELECTORES VAN UTILIZAR MISMAS PROPIEDADES  EJM TANTO NAV COMO FOOTER USAN EL FONDO AZUL */
 nav, footer {
     background-color: steelblue;
 }
