@@ -1,0 +1,18 @@
+
+
+img {
+    float: right;
+}
+
+
+.overflow-x{
+    height: 600px;
+    overflow-y: visible;
+    background-color: thistle;
+    border: 1px solid black
+
+}
+
+.overflow-x p{
+    height: 400px;
+}

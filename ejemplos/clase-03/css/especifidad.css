@@ -1,0 +1,44 @@
+/*
+ESPECIFIDAD ES LA MANERA COMO EL NAVEGADOR INTERPERTA NUESTRO CSS Y APLICA LA JERARQUIA PARA 
+CONOCER QUE ELEMENTO VA SER PINTADO O SE LE VAN A APLICAR NUESTRAS REGLAS (en pocas palabras resolver conflictos entre estilos)
+*/
+
+/*
+JERARQUIA DE ESPECIFIDAD
+
+1. ETIQUETAS HTML O ATRIBUTOS (TIPOS... h2, p, header o [target='_blank'] etc) => ....... 1 
+2. CLASE (.miclase) ..................................................................... 10
+3. ID (#soyunico) ....................................................................... 100
+4. ESTILOS EN LINEA (atributos en una etiqueta html ejm <a style="color: red;">) ........ 1000
+5. !Important ........................................................................... INFINITO (GANA A TODOS)
+
+si por alguna razon tienen el mismo valor la especifidad resuelve por CASCADA
+*/
+
+h2 {
+    color: red !important;
+}
+
+.color-amarillo { 
+    color: yellow !important;
+}
+
+.color-azul {
+    color: blue;
+}
+
+#verde {
+    color: green;
+}
+
+p[class^='parrafo']{
+    font-weight: 700;
+}
+
+.parrafo-uno {
+    color: steelblue;
+}
+
+.parrafo-dos {
+    color: pink;
+}
