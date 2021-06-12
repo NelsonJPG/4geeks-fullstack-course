@@ -1,0 +1,14 @@
+:root{
+    --primary:seagreen
+}
+
+.row > *:nth-of-type(odd) {
+    background-color: pink !important; 
+}
+
+.row > *:nth-of-type(even) {
+    background-color: yellow !important;
+}
+.reglacustomizada {
+    justify-content: center;
+}

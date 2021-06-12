@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="myBtn">Try it <span>Otra Cosa</span></h2>
+
+<p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur nemo magni placeat voluptate. Hic et totam aperiam aut sequi modi, amet facilis quae quasi ullam, minima ipsa ab eius.</p>
+<script>
+//CAMEL CASE
+var selector = document.getElementById("myBtn")
+selector.addEventListener("mouseover", function() {
+  /*document.getElementById("demo")*/
+  console.log(selector, this, typeof selector, typeof this)
+  selector.innerText = "Hello World";
+});
+</script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+:root {
+    --bs-gray: #ededed;
+}
+
+
+.bg-gray{
+    background-color: var(--bs-gray);
+}
+
+.anuncio {
+    bottom: 0;
+}
