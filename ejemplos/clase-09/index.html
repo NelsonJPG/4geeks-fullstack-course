@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+
+        .lista {
+            background-color: thistle;
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Mi curso acerca de <span>DOM</span></h2>
+    <input type="text" name="estudiante" placeholder="Ingrese Nombre... ejm: Jon Doe">
+    <button id="addStudent" type="button">Agregar</button>
+    <ul id="menuEstudiantes">
+        <li><a href="#">Octavio</a></li>
+        <li><a class="otra" href="#">Oriana</a></li>
+        <li><a href="#">Juan</a></li>
+    </ul>
+
+<!--
+    <input type="text" id="minombre" name="nombre" placeholder="Ingrese Nombre... ejm: Jon Doe">
+    <p id="imprimir"></p>
+-->
+
+<div class="container">
+
+    <div class="card row" style="width: 500px; margin-left: auto; margin-right: auto;">
+        <div class="card-body">
+            <h2>Formulario de Contacto</h2>
+            <form class="">
+                <input onkeydown="validar(this)" id="input1" class="my-1 form-control" type="text" name="nombre" placeholder="nombre" >
+                <span></span>
+                
+                <input onkeydown="validar(this)" id="input2" class="my-1 form-control" type="text" name="apellido" placeholder="apellido">
+                <span></span>
+
+                <input onkeydown="validar(this)" id="input3" class="my-1 form-control" type="text" name="cedula" placeholder="cedula">
+                <span></span>
+
+                <button class="btn btn-primary d-block" id="enviarCurso">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <table class="table" id="curso">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cedula</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+
+<!--
+
+    
+    <div id="noticias">
+        <article class="articulo-tecnologia">
+            <img src="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta ab deleniti consequuntur tenetur maiores officiis dignissimos, voluptatum alias aut cupiditate atque, quibusdam nam molestias nemo beatae sequi laboriosam aliquid!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta ab deleniti consequuntur tenetur maiores officiis dignissimos, voluptatum alias aut cupiditate atque, quibusdam nam molestias nemo beatae sequi laboriosam aliquid!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta ab deleniti consequuntur tenetur maiores officiis dignissimos, voluptatum alias aut cupiditate atque, quibusdam nam molestias nemo beatae sequi laboriosam aliquid!</p>
+        </article>
+        <article class="articulo-farandula">
+            <img src="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta ab deleniti consequuntur tenetur maiores officiis dignissimos, voluptatum alias aut cupiditate atque, quibusdam nam molestias nemo beatae sequi laboriosam aliquid!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta ab deleniti consequuntur tenetur maiores officiis dignissimos, voluptatum alias aut cupiditate atque, quibusdam nam molestias nemo beatae sequi laboriosam aliquid!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta ab deleniti consequuntur tenetur maiores officiis dignissimos, voluptatum alias aut cupiditate atque, quibusdam nam molestias nemo beatae sequi laboriosam aliquid!</p>
+        </article>
+    </div>
+    
+    
+-->
+    
+    
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
