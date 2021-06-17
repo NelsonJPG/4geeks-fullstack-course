@@ -63,6 +63,37 @@ estudiantes.children[1].classList.remove('otra') // elimino clases css
 
 
 
+let lienzo = document.getElementById("canvas");
+let context = lienzo.getContext("2d");
+let radius = 5;
+let WIDTH = lienzo.width
+let HEIGHT = lienzo.height
+let canvasStartX
+let canvasStartY
+
+context.fillStyle = "white";
+context.fillRect(0, 0, WIDTH, HEIGHT)
+
+
+lienzo.addEventListener('mousemove', function(event){
+    canvasStartX = event.target.offsetLeft;
+    canvasStartY = event.target.offsetTop;
+    
+    if(event.buttons === 1){
+        console.log(event.x, event.y)
+        DrawPinter(event.x,event.y)
+    }
+})
+
+DrawPinter(100, 100);
+
+function DrawPinter(x , y){
+    context.beginPath();
+    context.arc(x - canvasStartX, y - canvasStartY, radius, 0, 2 * Math.PI);
+    context.fillStyle = 'black';
+    context.fill()
+    context.lineWidth = 5
+}
 
 let buttonAgregar = document.querySelector("#addStudent");
 
